@@ -12,4 +12,10 @@ routes.get("/classes", classesControllers.index);
 routes.get("/connections", connectionsControllers.index);
 routes.post("/connections", connectionsControllers.create);
 
+routes.get('/', (req, res) => {
+	res.json({
+		ok: "Funcionando"
+	})
+})
+
 export default routes;
